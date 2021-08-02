@@ -32,10 +32,7 @@ function updateTask(title, id, done) {
             taskId: id,
             done: done
         }
-      });
-    const promise = axios.put(, {
-       
-    });
+      });    
     return promise.then((response) => {
         return response.data;
     });
